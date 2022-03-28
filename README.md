@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page on Frontend Mentor]()
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-By9yn1kQ9)
 - Github Pages URL: [Github Pages](https://rachmatilham.github.io/fylo-landing-page-with-two-column-layout-master/)
 
 ## My process
