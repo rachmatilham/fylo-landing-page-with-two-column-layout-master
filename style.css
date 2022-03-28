@@ -1,0 +1,611 @@
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+  --light-red: hsl(0, 100%, 63%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 23px 23px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 82px;
+}
+nav .nav-link {
+  width: 50.5%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+nav a {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+article {
+  margin-top: 100px;
+}
+
+.content-container-1 {
+  padding: 0 30px;
+  text-align: center;
+}
+.content-container-1 img {
+  padding: 0 5px;
+  width: 100%;
+}
+.content-container-1 h1 {
+  margin-top: 35px;
+  color: var(--very-dark-blue);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+.content-container-1 p {
+  margin-top: 25px;
+  padding: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--very-dark-blue);
+  font-size: 0.87em;
+  line-height: 1.5;
+}
+.content-container-1 form {
+  margin-top: 30px;
+  padding: 0 5px;
+  position: relative;
+}
+.content-container-1 input {
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--desaturated-blue);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+}
+.content-container-1 input.active {
+  border: 1px solid var(--light-red);
+}
+.content-container-1 form .error {
+  text-align: left;
+  margin-top: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  color: var(--light-red);
+  display: none;
+}
+.content-container-1 form .error.active {
+  display: block;
+}
+.content-container-1 button {
+  margin-top: 17px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--bright-blue);
+  background-color: var(--bright-blue);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.87em;
+  font-weight: 700;
+}
+.content-container-1 button:hover {
+  cursor: pointer;
+  border: 1px solid hsl(221, 100%, 71%);
+  background-color: hsl(221, 100%, 71%);
+}
+
+.bg-top {
+  margin-top: 90px;
+  background: white url(./images/bg-curve-mobile.svg) no-repeat bottom;
+  background-size: cover;
+  height: 53px;
+}
+.content-container-2 {
+  background-color: #f8f8fe;
+  padding: 0 20px 85px;
+}
+.content-container-2 img.illustration {
+  margin-top: 40px;
+  padding: 0 8px;
+  width: 100%;
+}
+.content-container-2 h2 {
+  margin-top: 87px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  color: var(--very-dark-blue);
+  margin-bottom: 27px;
+}
+.content-container-2 p {
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.87em;
+  padding-right: 10px;
+  line-height: 1.5;
+  color: var(--desaturated-blue);
+}
+.content-container-2 .cta {
+  margin-top: 35px;
+  width: 100%;
+  text-align: center;
+}
+.content-container-2 .cta a {
+  color: var(--moderate-cyan);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--moderate-cyan);
+}
+.content-container-2 .cta a:hover {
+  color: hsl(169, 63%, 67%);
+  border-bottom: 1px solid hsl(169, 63%, 67%);
+}
+.content-container-2 .cta a img {
+  position: relative;
+  top: 3px;
+}
+
+.testimonial {
+  margin: 0 27px;
+  margin-top: 45px;
+  padding: 20px 15px 15px;
+  padding-left: 25px;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--very-dark-blue);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.testimonial img {
+  width: 12px;
+  height: 10px;
+}
+.testimonial p {
+  margin-top: 5px;
+  padding: 0;
+  font-size: 0.67em;
+  line-height: 1.6;
+}
+.testimonial .author {
+  margin-top: 14px;
+  display: flex;
+}
+.testimonial .author img {
+  width: 25px;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.testimonial .author p {
+  margin: 0;
+}
+.testimonial .author p.name {
+  font-weight: bold;
+}
+.testimonial .author p.desc {
+  font-size: 0.42em;
+}
+
+section.call-to-action {
+  padding: 60px 35px 70px;
+  padding-right: 60px;
+  text-align: center;
+  background-color: var(--desaturated-blue);
+  color: white;
+}
+section.call-to-action h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.15em;
+}
+section.call-to-action p {
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.87em;
+  line-height: 1.5;
+}
+section.call-to-action form {
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+}
+section.call-to-action input {
+  margin-top: 25px;
+  width: 100%;
+  height: 32px;
+  border-radius: 2px;
+  border: 0;
+  padding-left: 8px;
+  font-family: "Raleway", sans-serif;
+}
+section.call-to-action input.active {
+  border: 1px solid var(--light-red);
+}
+section.call-to-action form .error {
+  text-align: left;
+  margin-top: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  display: none;
+}
+section.call-to-action form .error.active {
+  display: block;
+}
+section.call-to-action button {
+  margin-top: 8px;
+  width: 100%;
+  height: 32px;
+  border-radius: 2px;
+  border: 0;
+  background-color: var(--bright-blue);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.65em;
+}
+section.call-to-action button:hover {
+  cursor: pointer;
+  border: 1px solid hsl(221, 100%, 71%);
+  background-color: hsl(221, 100%, 71%);
+}
+
+main footer {
+  background-color: var(--very-dark-blue);
+  color: white;
+  padding: 65px 40px 45px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .logo {
+  -webkit-mask: url(./images/logo.svg) no-repeat center;
+  mask: url(./images/logo.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 180px;
+  height: 55px;
+  background-color: white;
+}
+footer .phone {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 2px;
+}
+footer .phone img {
+  width: 18px;
+  height: 18px;
+}
+footer .email {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+footer .email img {
+  width: 20px;
+  height: 16px;
+}
+footer .phone p {
+  margin-left: 18px;
+}
+footer .email p {
+  margin-left: 16px;
+}
+footer .about-us {
+  margin-top: 60px;
+}
+footer .contact-us {
+  margin-top: 50px;
+}
+footer li {
+  margin-top: 15px;
+  list-style-type: none;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover {
+  color: hsl(231, 40%, 59%);
+}
+
+footer .icon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 45px;
+}
+footer .icon a {
+  width: 27px;
+  height: 27px;
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
+footer .icon svg {
+  height: 100%;
+}
+footer .icon a:nth-child(1):hover {
+  fill: #3b5998;
+  border: 1px solid #3b5998;
+}
+footer .icon a:nth-child(2):hover {
+  fill: #00acee;
+  border: 1px solid #00acee;
+}
+footer .icon a:nth-child(3):hover {
+  fill: #e1306c;
+  border: 1px solid #e1306c;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0px none;
+  padding: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+.attribution {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 376px) {
+  .bg-top {
+    margin-top: 160px;
+    background: white url(./images/bg-curve-desktop.svg) no-repeat bottom;
+    background-size: contain;
+    height: 114px;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding: 65px 80px 0;
+  }
+  nav img {
+    width: 170px;
+  }
+  nav .nav-link {
+    width: 21.5%;
+    font-size: 0.87em;
+  }
+
+  article {
+    margin-top: 90px;
+  }
+
+  .content-container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+  .content-container-1 .illustration {
+    order: 2;
+    width: 50%;
+  }
+  .content-container-1 img {
+    padding: 0;
+    max-height: 98%;
+  }
+  .content-container-1 .main-content {
+    order: 1;
+    text-align: left;
+    width: 46%;
+  }
+  .content-container-1 h1 {
+    margin-top: 72px;
+    font-size: 2.5em;
+  }
+  .content-container-1 p {
+    margin-top: 15px;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.13em;
+    line-height: 1.3;
+  }
+  .content-container-1 form {
+    margin-top: 27px;
+    padding: 0;
+    padding-right: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-container-1 input {
+    width: 59.8%;
+    height: 45px;
+    font-size: 0.96em;
+  }
+  .content-container-1 form .error {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    font-size: 0.8em;
+  }
+  .content-container-1 button {
+    margin: 0;
+    width: 37.4%;
+    height: 45px;
+  }
+
+  .bg-top {
+    background-size: cover;
+  }
+  .content-container-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px 109px;
+  }
+  .content-container-2 .illustration {
+    order: 2;
+    width: 42.6%;
+  }
+  .content-container-2 img.illustration {
+    margin-top: 23px;
+    padding: 0;
+    max-height: 83%;
+  }
+  .content-container-2 .main-content {
+    order: 1;
+    text-align: left;
+    width: 51.6%;
+  }
+  .content-container-2 h2 {
+    text-align: left;
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .content-container-2 p {
+    padding-right: 125px;
+    font-size: 1em;
+  }
+  .content-container-2 .cta {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .content-container-2 .cta a {
+    font-size: 1em;
+  }
+
+  .testimonial {
+    margin: 0;
+    margin-top: 48px;
+    width: 53.8%;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-bottom: 26px;
+  }
+  .testimonial img {
+    width: 13px;
+    height: 12px;
+  }
+  .testimonial p {
+    padding-right: 20px;
+    font-size: 0.87em;
+    line-height: 1.65;
+  }
+  .testimonial .author {
+    margin-top: 18px;
+  }
+  .testimonial .author img {
+    margin-left: 2px;
+    margin-right: 10px;
+    width: 31px;
+  }
+  .testimonial .author p {
+    font-size: 0.6em;
+    letter-spacing: 0.13em;
+  }
+  .testimonial .author p.desc {
+    padding: 0;
+    font-size: 0.53em;
+    letter-spacing: 0;
+  }
+
+  section.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 105px 80px 85px;
+    padding-right: 120px;
+  }
+  section.call-to-action .text-container {
+    width: 42%;
+    text-align: left;
+  }
+  section.call-to-action h2 {
+    font-size: 2em;
+  }
+  section.call-to-action p {
+    margin-top: 22px;
+    font-size: 1.07em;
+    line-height: 1.4;
+  }
+  section.call-to-action form {
+    padding: 0;
+    width: 38.7%;
+    text-align: left;
+  }
+  section.call-to-action input {
+    margin-top: 7px;
+    height: 48px;
+    font-size: 0.75em;
+    padding-left: 20px;
+  }
+  section.call-to-action button {
+    margin-top: 17px;
+    width: 41.67%;
+    height: 48px;
+    font-size: 0.87em;
+  }
+
+  main footer {
+    display: grid;
+    grid-template-areas:
+      "logo logo logo logo"
+      "contact about-us contact-us icon";
+    padding: 109px 80px 58px;
+    row-gap: 23px;
+  }
+  footer .logo {
+    width: 176px;
+    height: 53px;
+    grid-area: logo;
+  }
+  footer .contact {
+    grid-area: contact;
+  }
+  footer .phone {
+    margin-top: 0;
+  }
+  footer .email {
+    margin-top: 17px;
+  }
+  footer .about-us {
+    margin-top: 0;
+    margin-left: 50px;
+    grid-area: about-us;
+  }
+  footer .contact-us {
+    margin-top: 0;
+    margin-left: 25px;
+    grid-area: contact-us;
+  }
+  footer .icon {
+    margin-top: 0;
+    grid-area: icon;
+    justify-content: left;
+  }
+  footer .icon a {
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    margin-top: 4px;
+  }
+}
