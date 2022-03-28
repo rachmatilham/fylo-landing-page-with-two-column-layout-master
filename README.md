@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I continued to learn how to do the layouting for the two column page, as close as possible to the design provided by Frontend Mentor.
+I continue to learn how to do the layouting for the two column page, as close as possible to the design provided by Frontend Mentor.
 
 ### Continued development
 
